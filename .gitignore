@@ -1,0 +1,66 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+
+# ORT profiler traces & scratch
+*.json.trace
+onnxruntime_profile__*.json
+scratch/
+*.prof
+# agent scratch verifiers (root-level probes, never adopted)
+/an*.py
+/verify*.py
+/debug*.py
+/_verify*.py
+/memprofile.py
+
+# Submission archives are reproducible artifacts
+/submission.zip
+submission_*/
+submission/*.zip
+reports/probes/zips/*.zip
+reports/probes/candidates/*.onnx
+.gstack/
+.worktrees/
+
+# ONNX files are build/deploy artifacts, not source of truth.
+*.onnx
+networks/
+
+# Local tool/session artifacts
+.playwright-mcp/
+
+# arc-gen generators (fresh-gating): project-local copy + portable zip.
+# Kept out of git, but the repo-local copy is authoritative for this project.
+/arc-gen/
+/arc-gen.zip
+
+# Public teacher/reference artifacts are local-only.
+# They may be useful as teachers, but should not become source of truth.
+public_candidates/
+reports/public_teacher_sources/
+reports/public_teacher_insights/
+reports/public_teacher_report.*
+
+# Generated research scratch; reproducible or obsolete.
+reports/generated_exact_sources/
+reports/probes/
+reports/__pycache__/
+reports/scripts/__pycache__/
+reports/*.log
+reports/harvest_multi.*
+reports/relprobe.json
+reports/factored_scan.json
+reports/semantic_archetypes.*
+docs/superpowers/plans/
+docs/superpowers/specs/
+reports/fresh_cache/
+
+# Generated task-matching index (regenerate via reports/scripts/build_task_index.py)
+reports/task_index.json
+scratch_mine_keep/
+
+.agents/
+.codex/
