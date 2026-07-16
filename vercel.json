@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/tools/dashboard.html" }
+  ],
+  "headers": [
+    {
+      "source": "/reports/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=300" }
+      ]
+    }
+  ]
+}
