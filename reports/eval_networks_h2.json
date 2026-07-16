@@ -1,0 +1,2811 @@
+{
+  "dir": "/home/zuhair/Desktop/project/neurogolf-2026/networks",
+  "harness": "src.harness2",
+  "tasks": {
+    "1": {
+      "points": 19.752975927839515,
+      "memory": 0,
+      "params": 190,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task001.onnx",
+      "relaxed_scoring": true
+    },
+    "2": {
+      "points": 16.333008443495366,
+      "memory": 5300,
+      "params": 508,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task002.onnx",
+      "relaxed_scoring": true
+    },
+    "3": {
+      "points": 20.03715536974009,
+      "memory": 0,
+      "params": 143,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task003.onnx",
+      "relaxed_scoring": true
+    },
+    "4": {
+      "points": 16.509972476656532,
+      "memory": 4772,
+      "params": 94,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task004.onnx",
+      "relaxed_scoring": true
+    },
+    "5": {
+      "points": 16.66745106074736,
+      "memory": 4079,
+      "params": 78,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task005.onnx",
+      "relaxed_scoring": true
+    },
+    "6": {
+      "points": 20.810345257973573,
+      "memory": 36,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task006.onnx",
+      "relaxed_scoring": true
+    },
+    "7": {
+      "points": 20.15581291354141,
+      "memory": 0,
+      "params": 127,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task007.onnx",
+      "relaxed_scoring": true
+    },
+    "8": {
+      "points": 17.337532184799763,
+      "memory": 2002,
+      "params": 125,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task008.onnx",
+      "relaxed_scoring": true
+    },
+    "9": {
+      "points": 16.40510530091991,
+      "memory": 5329,
+      "params": 75,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task009.onnx",
+      "relaxed_scoring": true
+    },
+    "10": {
+      "points": 19.062463794917573,
+      "memory": 165,
+      "params": 214,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task010.onnx",
+      "relaxed_scoring": true
+    },
+    "11": {
+      "points": 19.358092929061886,
+      "memory": 32,
+      "params": 250,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task011.onnx",
+      "relaxed_scoring": true
+    },
+    "12": {
+      "points": 17.28087015909327,
+      "memory": 2063,
+      "params": 188,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task012.onnx",
+      "relaxed_scoring": true
+    },
+    "13": {
+      "points": 17.738774908028077,
+      "memory": 1361,
+      "params": 63,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task013.onnx",
+      "relaxed_scoring": true
+    },
+    "14": {
+      "points": 16.681989722453128,
+      "memory": 4016,
+      "params": 81,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task014.onnx",
+      "relaxed_scoring": true
+    },
+    "15": {
+      "points": 18.197605236675688,
+      "memory": 0,
+      "params": 900,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task015.onnx",
+      "relaxed_scoring": true
+    },
+    "16": {
+      "points": 22.697414907005953,
+      "memory": 0,
+      "params": 10,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task016.onnx",
+      "relaxed_scoring": true
+    },
+    "17": {
+      "points": 22.697414907005953,
+      "memory": 0,
+      "params": 10,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task017.onnx",
+      "relaxed_scoring": true
+    },
+    "18": {
+      "points": 15.278094277922827,
+      "memory": 16509,
+      "params": 170,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task018.onnx",
+      "relaxed_scoring": true
+    },
+    "19": {
+      "points": 17.174754708568226,
+      "memory": 2421,
+      "params": 82,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task019.onnx",
+      "relaxed_scoring": true
+    },
+    "20": {
+      "points": 18.073422966777276,
+      "memory": 712,
+      "params": 307,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task020.onnx",
+      "relaxed_scoring": true
+    },
+    "21": {
+      "points": 20.072746314842796,
+      "memory": 84,
+      "params": 54,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task021.onnx",
+      "relaxed_scoring": true
+    },
+    "22": {
+      "points": 18.197605236675688,
+      "memory": 162,
+      "params": 738,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task022.onnx",
+      "relaxed_scoring": true
+    },
+    "23": {
+      "points": 16.264957245730663,
+      "memory": 6051,
+      "params": 166,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task023.onnx",
+      "relaxed_scoring": true
+    },
+    "24": {
+      "points": 20.97464830926485,
+      "memory": 0,
+      "params": 56,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task024.onnx",
+      "relaxed_scoring": true
+    },
+    "25": {
+      "points": 15.808129144307479,
+      "memory": 9684,
+      "params": 133,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task025.onnx",
+      "relaxed_scoring": true
+    },
+    "26": {
+      "points": 19.701682633451963,
+      "memory": 0,
+      "params": 200,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task026.onnx",
+      "relaxed_scoring": true
+    },
+    "27": {
+      "points": 18.130985549334294,
+      "memory": 659,
+      "params": 303,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task027.onnx",
+      "relaxed_scoring": true
+    },
+    "28": {
+      "points": 20.40488014986541,
+      "memory": 0,
+      "params": 99,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task028.onnx",
+      "relaxed_scoring": true
+    },
+    "29": {
+      "points": 16.427561334357783,
+      "memory": 5208,
+      "params": 76,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task029.onnx",
+      "relaxed_scoring": true
+    },
+    "30": {
+      "points": 17.713808285297617,
+      "memory": 1330,
+      "params": 130,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task030.onnx",
+      "relaxed_scoring": true
+    },
+    "31": {
+      "points": 18.543230344427837,
+      "memory": 524,
+      "params": 113,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task031.onnx",
+      "relaxed_scoring": true
+    },
+    "32": {
+      "points": 18.186555400489105,
+      "memory": 0,
+      "params": 910,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task032.onnx",
+      "relaxed_scoring": true
+    },
+    "33": {
+      "points": 19.409013019489144,
+      "memory": 0,
+      "params": 268,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task033.onnx",
+      "relaxed_scoring": true
+    },
+    "34": {
+      "points": 17.834506524939155,
+      "memory": 1109,
+      "params": 185,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task034.onnx",
+      "relaxed_scoring": true
+    },
+    "35": {
+      "points": 17.53663695447998,
+      "memory": 1310,
+      "params": 433,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task035.onnx",
+      "relaxed_scoring": true
+    },
+    "36": {
+      "points": 18.04250262912305,
+      "memory": 961,
+      "params": 90,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task036.onnx",
+      "relaxed_scoring": true
+    },
+    "37": {
+      "points": 17.210959598342523,
+      "memory": 2230,
+      "params": 184,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task037.onnx",
+      "relaxed_scoring": true
+    },
+    "38": {
+      "points": 20.016393378291664,
+      "memory": 19,
+      "params": 127,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task038.onnx",
+      "relaxed_scoring": true
+    },
+    "39": {
+      "points": 18.884107874516964,
+      "memory": 404,
+      "params": 49,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task039.onnx",
+      "relaxed_scoring": true
+    },
+    "40": {
+      "points": 20.61797336532612,
+      "memory": 0,
+      "params": 80,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task040.onnx",
+      "relaxed_scoring": true
+    },
+    "41": {
+      "points": 18.86877351051686,
+      "memory": 0,
+      "params": 460,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task041.onnx",
+      "relaxed_scoring": true
+    },
+    "42": {
+      "points": 16.95762199482672,
+      "memory": 2792,
+      "params": 318,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task042.onnx",
+      "relaxed_scoring": true
+    },
+    "43": {
+      "points": 20.939556989453582,
+      "memory": 0,
+      "params": 58,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task043.onnx",
+      "relaxed_scoring": true
+    },
+    "44": {
+      "points": 16.926597031013593,
+      "memory": 3060,
+      "params": 148,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task044.onnx",
+      "relaxed_scoring": true
+    },
+    "45": {
+      "points": 20.500190329669735,
+      "memory": 0,
+      "params": 90,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task045.onnx",
+      "relaxed_scoring": true
+    },
+    "46": {
+      "points": 17.365179322254455,
+      "memory": 1999,
+      "params": 70,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task046.onnx",
+      "relaxed_scoring": true
+    },
+    "47": {
+      "points": 18.240744729336306,
+      "memory": 826,
+      "params": 36,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task047.onnx",
+      "relaxed_scoring": true
+    },
+    "48": {
+      "points": 18.419360862715052,
+      "memory": 604,
+      "params": 117,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task048.onnx",
+      "relaxed_scoring": true
+    },
+    "49": {
+      "points": 19.159358342626604,
+      "memory": 303,
+      "params": 41,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task049.onnx",
+      "relaxed_scoring": true
+    },
+    "50": {
+      "points": 16.993632432349756,
+      "memory": 2925,
+      "params": 75,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task050.onnx",
+      "relaxed_scoring": true
+    },
+    "51": {
+      "points": 17.536063395531073,
+      "memory": 1643,
+      "params": 101,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task051.onnx",
+      "relaxed_scoring": true
+    },
+    "52": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task052.onnx",
+      "relaxed_scoring": true
+    },
+    "53": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task053.onnx",
+      "relaxed_scoring": true
+    },
+    "54": {
+      "points": 15.078034226218099,
+      "memory": 20091,
+      "params": 282,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task054.onnx",
+      "relaxed_scoring": true
+    },
+    "55": {
+      "points": 17.53893448564572,
+      "memory": 1560,
+      "params": 179,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task055.onnx",
+      "relaxed_scoring": true
+    },
+    "56": {
+      "points": 21.598802618337846,
+      "memory": 19,
+      "params": 11,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task056.onnx",
+      "relaxed_scoring": true
+    },
+    "57": {
+      "points": 18.495711826463356,
+      "memory": 638,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task057.onnx",
+      "relaxed_scoring": true
+    },
+    "58": {
+      "points": 20.002787726235887,
+      "memory": 20,
+      "params": 128,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task058.onnx",
+      "relaxed_scoring": true
+    },
+    "59": {
+      "points": 18.697381024255094,
+      "memory": 273,
+      "params": 273,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task059.onnx",
+      "relaxed_scoring": true
+    },
+    "60": {
+      "points": 20.140187595638327,
+      "memory": 0,
+      "params": 129,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task060.onnx",
+      "relaxed_scoring": true
+    },
+    "61": {
+      "points": 17.58061941708131,
+      "memory": 1633,
+      "params": 35,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task061.onnx",
+      "relaxed_scoring": true
+    },
+    "62": {
+      "points": 17.185600366195512,
+      "memory": 2417,
+      "params": 59,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task062.onnx",
+      "relaxed_scoring": true
+    },
+    "63": {
+      "points": 17.650126295261664,
+      "memory": 1530,
+      "params": 26,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task063.onnx",
+      "relaxed_scoring": true
+    },
+    "64": {
+      "points": 16.30098537683149,
+      "memory": 5860,
+      "params": 137,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task064.onnx",
+      "relaxed_scoring": true
+    },
+    "65": {
+      "points": 18.606409246049367,
+      "memory": 550,
+      "params": 48,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task065.onnx",
+      "relaxed_scoring": true
+    },
+    "66": {
+      "points": 16.433255029754513,
+      "memory": 5191,
+      "params": 63,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task066.onnx",
+      "relaxed_scoring": true
+    },
+    "67": {
+      "points": 25.0,
+      "memory": 0,
+      "params": 0,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task067.onnx",
+      "relaxed_scoring": true
+    },
+    "68": {
+      "points": 18.565453481212547,
+      "memory": 500,
+      "params": 123,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task068.onnx",
+      "relaxed_scoring": true
+    },
+    "69": {
+      "points": 17.010778591184724,
+      "memory": 2864,
+      "params": 85,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task069.onnx",
+      "relaxed_scoring": true
+    },
+    "70": {
+      "points": 17.587839665054794,
+      "memory": 1440,
+      "params": 216,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task070.onnx",
+      "relaxed_scoring": true
+    },
+    "71": {
+      "points": 17.11279141418607,
+      "memory": 2607,
+      "params": 56,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task071.onnx",
+      "relaxed_scoring": true
+    },
+    "72": {
+      "points": 20.058357577390694,
+      "memory": 0,
+      "params": 140,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task072.onnx",
+      "relaxed_scoring": true
+    },
+    "73": {
+      "points": 21.821946169652055,
+      "memory": 0,
+      "params": 24,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task073.onnx",
+      "relaxed_scoring": true
+    },
+    "74": {
+      "points": 18.67564103761869,
+      "memory": 0,
+      "params": 558,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task074.onnx",
+      "relaxed_scoring": true
+    },
+    "75": {
+      "points": 18.6738505268449,
+      "memory": 0,
+      "params": 559,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task075.onnx",
+      "relaxed_scoring": true
+    },
+    "76": {
+      "points": 15.621436995609365,
+      "memory": 11778,
+      "params": 54,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task076.onnx",
+      "relaxed_scoring": true
+    },
+    "77": {
+      "points": 16.246786519455874,
+      "memory": 4500,
+      "params": 1831,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task077.onnx",
+      "relaxed_scoring": true
+    },
+    "78": {
+      "points": 20.593280752735748,
+      "memory": 0,
+      "params": 82,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task078.onnx",
+      "relaxed_scoring": true
+    },
+    "79": {
+      "points": 18.36931661435763,
+      "memory": 679,
+      "params": 79,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task079.onnx",
+      "relaxed_scoring": true
+    },
+    "80": {
+      "points": 16.463200278944846,
+      "memory": 4883,
+      "params": 216,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task080.onnx",
+      "relaxed_scoring": true
+    },
+    "81": {
+      "points": 18.860115447773744,
+      "memory": 392,
+      "params": 72,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task081.onnx",
+      "relaxed_scoring": true
+    },
+    "82": {
+      "points": 21.667795489824798,
+      "memory": 0,
+      "params": 28,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task082.onnx",
+      "relaxed_scoring": true
+    },
+    "83": {
+      "points": 20.058357577390694,
+      "memory": 0,
+      "params": 140,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task083.onnx",
+      "relaxed_scoring": true
+    },
+    "84": {
+      "points": 18.974134026174685,
+      "memory": 24,
+      "params": 390,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task084.onnx",
+      "relaxed_scoring": true
+    },
+    "85": {
+      "points": 17.348404426142398,
+      "memory": 1736,
+      "params": 368,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task085.onnx",
+      "relaxed_scoring": true
+    },
+    "86": {
+      "points": 17.12412084050369,
+      "memory": 2474,
+      "params": 159,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task086.onnx",
+      "relaxed_scoring": true
+    },
+    "87": {
+      "points": 23.3905620875659,
+      "memory": 0,
+      "params": 5,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task087.onnx",
+      "relaxed_scoring": true
+    },
+    "88": {
+      "points": 17.977131913917358,
+      "memory": 1031,
+      "params": 91,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task088.onnx",
+      "relaxed_scoring": true
+    },
+    "89": {
+      "points": 16.834636367526016,
+      "memory": 3479,
+      "params": 38,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task089.onnx",
+      "relaxed_scoring": true
+    },
+    "90": {
+      "points": 16.975792514221425,
+      "memory": 2972,
+      "params": 82,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task090.onnx",
+      "relaxed_scoring": true
+    },
+    "91": {
+      "points": 17.235703993549482,
+      "memory": 2323,
+      "params": 32,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task091.onnx",
+      "relaxed_scoring": true
+    },
+    "92": {
+      "points": 17.705622700711178,
+      "memory": 260,
+      "params": 1212,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task092.onnx",
+      "relaxed_scoring": true
+    },
+    "93": {
+      "points": 17.587839665054794,
+      "memory": 1533,
+      "params": 123,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task093.onnx",
+      "relaxed_scoring": true
+    },
+    "94": {
+      "points": 17.110540850595477,
+      "memory": 2558,
+      "params": 111,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task094.onnx",
+      "relaxed_scoring": true
+    },
+    "95": {
+      "points": 20.002787726235887,
+      "memory": 0,
+      "params": 148,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task095.onnx",
+      "relaxed_scoring": true
+    },
+    "96": {
+      "points": 16.287240025039786,
+      "memory": 5660,
+      "params": 420,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task096.onnx",
+      "relaxed_scoring": true
+    },
+    "97": {
+      "points": 18.186555400489105,
+      "memory": 0,
+      "params": 910,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task097.onnx",
+      "relaxed_scoring": true
+    },
+    "98": {
+      "points": 18.197605236675688,
+      "memory": 0,
+      "params": 900,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task098.onnx",
+      "relaxed_scoring": true
+    },
+    "99": {
+      "points": 18.777423731928632,
+      "memory": 0,
+      "params": 504,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task099.onnx",
+      "relaxed_scoring": true
+    },
+    "100": {
+      "points": 20.195978955266742,
+      "memory": 94,
+      "params": 28,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task100.onnx",
+      "relaxed_scoring": true
+    },
+    "101": {
+      "points": 15.672943828327856,
+      "memory": 10783,
+      "params": 455,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task101.onnx",
+      "relaxed_scoring": true
+    },
+    "102": {
+      "points": 17.165211892611808,
+      "memory": 2414,
+      "params": 113,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task102.onnx",
+      "relaxed_scoring": true
+    },
+    "103": {
+      "points": 20.9056554377779,
+      "memory": 36,
+      "params": 24,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task103.onnx",
+      "relaxed_scoring": true
+    },
+    "104": {
+      "points": 20.229315375534334,
+      "memory": 0,
+      "params": 118,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task104.onnx",
+      "relaxed_scoring": true
+    },
+    "105": {
+      "points": 17.70902522185702,
+      "memory": 1254,
+      "params": 213,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task105.onnx",
+      "relaxed_scoring": true
+    },
+    "106": {
+      "points": 18.560649628899903,
+      "memory": 452,
+      "params": 174,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task106.onnx",
+      "relaxed_scoring": true
+    },
+    "107": {
+      "points": 16.817999863706596,
+      "memory": 3420,
+      "params": 156,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task107.onnx",
+      "relaxed_scoring": true
+    },
+    "108": {
+      "points": 20.087345114263947,
+      "memory": 0,
+      "params": 136,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task108.onnx",
+      "relaxed_scoring": true
+    },
+    "109": {
+      "points": 17.594504336800526,
+      "memory": 1546,
+      "params": 99,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task109.onnx",
+      "relaxed_scoring": true
+    },
+    "110": {
+      "points": 17.080280239075424,
+      "memory": 264,
+      "params": 2487,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task110.onnx",
+      "relaxed_scoring": true
+    },
+    "111": {
+      "points": 19.266658723102253,
+      "memory": 223,
+      "params": 86,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task111.onnx",
+      "relaxed_scoring": true
+    },
+    "112": {
+      "points": 17.53377244378452,
+      "memory": 1616,
+      "params": 132,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task112.onnx",
+      "relaxed_scoring": true
+    },
+    "113": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task113.onnx",
+      "relaxed_scoring": true
+    },
+    "114": {
+      "points": 20.002787726235887,
+      "memory": 0,
+      "params": 148,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task114.onnx",
+      "relaxed_scoring": true
+    },
+    "115": {
+      "points": 18.078341815848873,
+      "memory": 944,
+      "params": 70,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task115.onnx",
+      "relaxed_scoring": true
+    },
+    "116": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task116.onnx",
+      "relaxed_scoring": true
+    },
+    "117": {
+      "points": 16.758560310170267,
+      "memory": 3592,
+      "params": 203,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task117.onnx",
+      "relaxed_scoring": true
+    },
+    "118": {
+      "points": 15.980094004928322,
+      "memory": 8092,
+      "params": 174,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task118.onnx",
+      "relaxed_scoring": true
+    },
+    "119": {
+      "points": 17.782556568303466,
+      "memory": 1243,
+      "params": 120,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task119.onnx",
+      "relaxed_scoring": true
+    },
+    "120": {
+      "points": 18.186555400489105,
+      "memory": 0,
+      "params": 910,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task120.onnx",
+      "relaxed_scoring": true
+    },
+    "121": {
+      "points": 19.213102618633293,
+      "memory": 260,
+      "params": 66,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task121.onnx",
+      "relaxed_scoring": true
+    },
+    "122": {
+      "points": 18.31164528605324,
+      "memory": 0,
+      "params": 803,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task122.onnx",
+      "relaxed_scoring": true
+    },
+    "123": {
+      "points": 18.072442093721683,
+      "memory": 582,
+      "params": 438,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task123.onnx",
+      "relaxed_scoring": true
+    },
+    "124": {
+      "points": 17.42852635114873,
+      "memory": 1868,
+      "params": 74,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task124.onnx",
+      "relaxed_scoring": true
+    },
+    "125": {
+      "points": 16.850109455597575,
+      "memory": 3434,
+      "params": 29,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task125.onnx",
+      "relaxed_scoring": true
+    },
+    "126": {
+      "points": 18.59477154196916,
+      "memory": 590,
+      "params": 15,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task126.onnx",
+      "relaxed_scoring": true
+    },
+    "127": {
+      "points": 19.01858578874552,
+      "memory": 204,
+      "params": 192,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task127.onnx",
+      "relaxed_scoring": true
+    },
+    "128": {
+      "points": 20.087345114263947,
+      "memory": 0,
+      "params": 136,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task128.onnx",
+      "relaxed_scoring": true
+    },
+    "129": {
+      "points": 20.61797336532612,
+      "memory": 80,
+      "params": 0,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task129.onnx",
+      "relaxed_scoring": true
+    },
+    "130": {
+      "points": 22.00426772644601,
+      "memory": 0,
+      "params": 20,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task130.onnx",
+      "relaxed_scoring": true
+    },
+    "131": {
+      "points": 16.738215320485246,
+      "memory": 3235,
+      "params": 638,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task131.onnx",
+      "relaxed_scoring": true
+    },
+    "132": {
+      "points": 17.861133000054476,
+      "memory": 1176,
+      "params": 84,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task132.onnx",
+      "relaxed_scoring": true
+    },
+    "133": {
+      "points": 15.209569169756168,
+      "memory": 17595,
+      "params": 267,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task133.onnx",
+      "relaxed_scoring": true
+    },
+    "134": {
+      "points": 17.667630794070938,
+      "memory": 1427,
+      "params": 102,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task134.onnx",
+      "relaxed_scoring": true
+    },
+    "135": {
+      "points": 20.195978955266742,
+      "memory": 72,
+      "params": 50,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task135.onnx",
+      "relaxed_scoring": true
+    },
+    "136": {
+      "points": 17.91493570604745,
+      "memory": 1159,
+      "params": 35,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task136.onnx",
+      "relaxed_scoring": true
+    },
+    "137": {
+      "points": 16.87259543730692,
+      "memory": 3263,
+      "params": 123,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task137.onnx",
+      "relaxed_scoring": true
+    },
+    "138": {
+      "points": 15.780105415219005,
+      "memory": 9965,
+      "params": 131,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task138.onnx",
+      "relaxed_scoring": true
+    },
+    "139": {
+      "points": 19.036420656381555,
+      "memory": 16,
+      "params": 373,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task139.onnx",
+      "relaxed_scoring": true
+    },
+    "140": {
+      "points": 23.3905620875659,
+      "memory": 0,
+      "params": 5,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task140.onnx",
+      "relaxed_scoring": true
+    },
+    "141": {
+      "points": 17.76798966833524,
+      "memory": 1281,
+      "params": 102,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task141.onnx",
+      "relaxed_scoring": true
+    },
+    "142": {
+      "points": 20.500190329669735,
+      "memory": 0,
+      "params": 90,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task142.onnx",
+      "relaxed_scoring": true
+    },
+    "143": {
+      "points": 18.345847479816783,
+      "memory": 502,
+      "params": 274,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task143.onnx",
+      "relaxed_scoring": true
+    },
+    "144": {
+      "points": 20.394829814011906,
+      "memory": 0,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task144.onnx",
+      "relaxed_scoring": true
+    },
+    "145": {
+      "points": 15.741631659013235,
+      "memory": 9244,
+      "params": 1248,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task145.onnx",
+      "relaxed_scoring": true
+    },
+    "146": {
+      "points": 19.466610511272478,
+      "memory": 153,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task146.onnx",
+      "relaxed_scoring": true
+    },
+    "147": {
+      "points": 18.723356510658355,
+      "memory": 432,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task147.onnx",
+      "relaxed_scoring": true
+    },
+    "148": {
+      "points": 16.53536405932244,
+      "memory": 4635,
+      "params": 109,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task148.onnx",
+      "relaxed_scoring": true
+    },
+    "149": {
+      "points": 20.087345114263947,
+      "memory": 36,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task149.onnx",
+      "relaxed_scoring": true
+    },
+    "150": {
+      "points": 20.09472522156157,
+      "memory": 134,
+      "params": 1,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task150.onnx",
+      "relaxed_scoring": true
+    },
+    "151": {
+      "points": 18.197605236675688,
+      "memory": 0,
+      "params": 900,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task151.onnx",
+      "relaxed_scoring": true
+    },
+    "152": {
+      "points": 20.9056554377779,
+      "memory": 0,
+      "params": 60,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task152.onnx",
+      "relaxed_scoring": true
+    },
+    "153": {
+      "points": 18.347136970646652,
+      "memory": 723,
+      "params": 52,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task153.onnx",
+      "relaxed_scoring": true
+    },
+    "154": {
+      "points": 17.10680113045539,
+      "memory": 2581,
+      "params": 98,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task154.onnx",
+      "relaxed_scoring": true
+    },
+    "155": {
+      "points": 20.072746314842796,
+      "memory": 136,
+      "params": 2,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task155.onnx",
+      "relaxed_scoring": true
+    },
+    "156": {
+      "points": 17.77962616327605,
+      "memory": 1310,
+      "params": 57,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task156.onnx",
+      "relaxed_scoring": true
+    },
+    "157": {
+      "points": 16.696247584436588,
+      "memory": 3847,
+      "params": 192,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task157.onnx",
+      "relaxed_scoring": true
+    },
+    "158": {
+      "points": 15.171235993659808,
+      "memory": 17884,
+      "params": 676,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task158.onnx",
+      "relaxed_scoring": true
+    },
+    "159": {
+      "points": 17.642443799089648,
+      "memory": 1419,
+      "params": 149,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task159.onnx",
+      "relaxed_scoring": true
+    },
+    "160": {
+      "points": 17.804062773524432,
+      "memory": 1164,
+      "params": 170,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task160.onnx",
+      "relaxed_scoring": true
+    },
+    "161": {
+      "points": 19.401578041001624,
+      "memory": 190,
+      "params": 80,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task161.onnx",
+      "relaxed_scoring": true
+    },
+    "162": {
+      "points": 16.83976750763231,
+      "memory": 3320,
+      "params": 179,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task162.onnx",
+      "relaxed_scoring": true
+    },
+    "163": {
+      "points": 19.302906513494595,
+      "memory": 0,
+      "params": 298,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task163.onnx",
+      "relaxed_scoring": true
+    },
+    "164": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task164.onnx",
+      "relaxed_scoring": true
+    },
+    "165": {
+      "points": 16.58196438011698,
+      "memory": 4370,
+      "params": 158,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task165.onnx",
+      "relaxed_scoring": true
+    },
+    "166": {
+      "points": 21.821946169652055,
+      "memory": 0,
+      "params": 24,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task166.onnx",
+      "relaxed_scoring": true
+    },
+    "167": {
+      "points": 20.68251188646369,
+      "memory": 55,
+      "params": 20,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task167.onnx",
+      "relaxed_scoring": true
+    },
+    "168": {
+      "points": 17.28710903850987,
+      "memory": 2096,
+      "params": 141,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task168.onnx",
+      "relaxed_scoring": true
+    },
+    "169": {
+      "points": 17.5794210945892,
+      "memory": 1500,
+      "params": 170,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task169.onnx",
+      "relaxed_scoring": true
+    },
+    "170": {
+      "points": 17.33988568082607,
+      "memory": 2056,
+      "params": 66,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task170.onnx",
+      "relaxed_scoring": true
+    },
+    "171": {
+      "points": 18.974134026174685,
+      "memory": 324,
+      "params": 90,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task171.onnx",
+      "relaxed_scoring": true
+    },
+    "172": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task172.onnx",
+      "relaxed_scoring": true
+    },
+    "173": {
+      "points": 15.498259476203625,
+      "memory": 13307,
+      "params": 76,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task173.onnx",
+      "relaxed_scoring": true
+    },
+    "174": {
+      "points": 17.267192469577978,
+      "memory": 2162,
+      "params": 120,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task174.onnx",
+      "relaxed_scoring": true
+    },
+    "175": {
+      "points": 17.865109148434115,
+      "memory": 318,
+      "params": 937,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task175.onnx",
+      "relaxed_scoring": true
+    },
+    "176": {
+      "points": 20.140187595638327,
+      "memory": 0,
+      "params": 129,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task176.onnx",
+      "relaxed_scoring": true
+    },
+    "177": {
+      "points": 17.17236045363358,
+      "memory": 2248,
+      "params": 261,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task177.onnx",
+      "relaxed_scoring": true
+    },
+    "178": {
+      "points": 18.364053444313353,
+      "memory": 702,
+      "params": 60,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task178.onnx",
+      "relaxed_scoring": true
+    },
+    "179": {
+      "points": 25.0,
+      "memory": 0,
+      "params": 0,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task179.onnx",
+      "relaxed_scoring": true
+    },
+    "180": {
+      "points": 20.002787726235887,
+      "memory": 0,
+      "params": 148,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task180.onnx",
+      "relaxed_scoring": true
+    },
+    "181": {
+      "points": 19.09191706183107,
+      "memory": 201,
+      "params": 167,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task181.onnx",
+      "relaxed_scoring": true
+    },
+    "182": {
+      "points": 16.28477595808463,
+      "memory": 6024,
+      "params": 71,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task182.onnx",
+      "relaxed_scoring": true
+    },
+    "183": {
+      "points": 18.315388272332072,
+      "memory": 727,
+      "params": 73,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task183.onnx",
+      "relaxed_scoring": true
+    },
+    "184": {
+      "points": 17.472206012278555,
+      "memory": 1740,
+      "params": 119,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task184.onnx",
+      "relaxed_scoring": true
+    },
+    "185": {
+      "points": 17.607968432485407,
+      "memory": 1518,
+      "params": 105,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task185.onnx",
+      "relaxed_scoring": true
+    },
+    "186": {
+      "points": 20.365271011770364,
+      "memory": 80,
+      "params": 23,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task186.onnx",
+      "relaxed_scoring": true
+    },
+    "187": {
+      "points": 16.49467698115425,
+      "memory": 2500,
+      "params": 2441,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task187.onnx",
+      "relaxed_scoring": true
+    },
+    "188": {
+      "points": 20.27261218128766,
+      "memory": 53,
+      "params": 60,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task188.onnx",
+      "relaxed_scoring": true
+    },
+    "189": {
+      "points": 18.208778537273815,
+      "memory": 837,
+      "params": 53,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task189.onnx",
+      "relaxed_scoring": true
+    },
+    "190": {
+      "points": 17.587839665054794,
+      "memory": 1610,
+      "params": 46,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task190.onnx",
+      "relaxed_scoring": true
+    },
+    "191": {
+      "points": 15.690357426949955,
+      "memory": 10961,
+      "params": 83,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task191.onnx",
+      "relaxed_scoring": true
+    },
+    "192": {
+      "points": 16.41627028478352,
+      "memory": 5272,
+      "params": 72,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task192.onnx",
+      "relaxed_scoring": true
+    },
+    "193": {
+      "points": 19.864201562949738,
+      "memory": 0,
+      "params": 170,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task193.onnx",
+      "relaxed_scoring": true
+    },
+    "194": {
+      "points": 18.14459120139007,
+      "memory": 900,
+      "params": 49,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task194.onnx",
+      "relaxed_scoring": true
+    },
+    "195": {
+      "points": 19.17695410451698,
+      "memory": 272,
+      "params": 66,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task195.onnx",
+      "relaxed_scoring": true
+    },
+    "196": {
+      "points": 16.580199154592414,
+      "memory": 4500,
+      "params": 36,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task196.onnx",
+      "relaxed_scoring": true
+    },
+    "197": {
+      "points": 17.13596434092755,
+      "memory": 2586,
+      "params": 16,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task197.onnx",
+      "relaxed_scoring": true
+    },
+    "198": {
+      "points": 16.02260102181814,
+      "memory": 7164,
+      "params": 758,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task198.onnx",
+      "relaxed_scoring": true
+    },
+    "199": {
+      "points": 18.19096069395702,
+      "memory": 802,
+      "params": 104,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task199.onnx",
+      "relaxed_scoring": true
+    },
+    "200": {
+      "points": 18.565453481212547,
+      "memory": 420,
+      "params": 203,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task200.onnx",
+      "relaxed_scoring": true
+    },
+    "201": {
+      "points": 16.978415466544895,
+      "memory": 2876,
+      "params": 170,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task201.onnx",
+      "relaxed_scoring": true
+    },
+    "202": {
+      "points": 17.387663162832254,
+      "memory": 1993,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task202.onnx",
+      "relaxed_scoring": true
+    },
+    "203": {
+      "points": 20.016393378291664,
+      "memory": 132,
+      "params": 14,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task203.onnx",
+      "relaxed_scoring": true
+    },
+    "204": {
+      "points": 15.898805075284615,
+      "memory": 7732,
+      "params": 1234,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task204.onnx",
+      "relaxed_scoring": true
+    },
+    "205": {
+      "points": 17.35843555873903,
+      "memory": 2050,
+      "params": 33,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task205.onnx",
+      "relaxed_scoring": true
+    },
+    "206": {
+      "points": 17.516193312334167,
+      "memory": 1644,
+      "params": 135,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task206.onnx",
+      "relaxed_scoring": true
+    },
+    "207": {
+      "points": 20.263801551605503,
+      "memory": 0,
+      "params": 114,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task207.onnx",
+      "relaxed_scoring": true
+    },
+    "208": {
+      "points": 16.695505102036435,
+      "memory": 3919,
+      "params": 123,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task208.onnx",
+      "relaxed_scoring": true
+    },
+    "209": {
+      "points": 16.24001750502272,
+      "memory": 6259,
+      "params": 115,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task209.onnx",
+      "relaxed_scoring": true
+    },
+    "210": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task210.onnx",
+      "relaxed_scoring": true
+    },
+    "211": {
+      "points": 20.163718093048523,
+      "memory": 0,
+      "params": 126,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task211.onnx",
+      "relaxed_scoring": true
+    },
+    "212": {
+      "points": 18.978976650650473,
+      "memory": 0,
+      "params": 412,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task212.onnx",
+      "relaxed_scoring": true
+    },
+    "213": {
+      "points": 17.477059081927628,
+      "memory": 1802,
+      "params": 48,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task213.onnx",
+      "relaxed_scoring": true
+    },
+    "214": {
+      "points": 18.736601737408378,
+      "memory": 402,
+      "params": 123,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task214.onnx",
+      "relaxed_scoring": true
+    },
+    "215": {
+      "points": 18.801521283507693,
+      "memory": 0,
+      "params": 492,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task215.onnx",
+      "relaxed_scoring": true
+    },
+    "216": {
+      "points": 15.965681072269293,
+      "memory": 8310,
+      "params": 76,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task216.onnx",
+      "relaxed_scoring": true
+    },
+    "217": {
+      "points": 18.9086901179223,
+      "memory": 0,
+      "params": 442,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task217.onnx",
+      "relaxed_scoring": true
+    },
+    "218": {
+      "points": 18.52456728329591,
+      "memory": 552,
+      "params": 97,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task218.onnx",
+      "relaxed_scoring": true
+    },
+    "219": {
+      "points": 16.116775769721006,
+      "memory": 7078,
+      "params": 132,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task219.onnx",
+      "relaxed_scoring": true
+    },
+    "220": {
+      "points": 18.92006680490441,
+      "memory": 132,
+      "params": 305,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task220.onnx",
+      "relaxed_scoring": true
+    },
+    "221": {
+      "points": 18.309157722581435,
+      "memory": 451,
+      "params": 354,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task221.onnx",
+      "relaxed_scoring": true
+    },
+    "222": {
+      "points": 17.08684481407193,
+      "memory": 1742,
+      "params": 991,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task222.onnx",
+      "relaxed_scoring": true
+    },
+    "223": {
+      "points": 23.3905620875659,
+      "memory": 0,
+      "params": 5,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task223.onnx",
+      "relaxed_scoring": true
+    },
+    "224": {
+      "points": 17.805563148899665,
+      "memory": 1168,
+      "params": 164,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task224.onnx",
+      "relaxed_scoring": true
+    },
+    "225": {
+      "points": 19.105597165735148,
+      "memory": 0,
+      "params": 363,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task225.onnx",
+      "relaxed_scoring": true
+    },
+    "226": {
+      "points": 17.664366018072798,
+      "memory": 1513,
+      "params": 21,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task226.onnx",
+      "relaxed_scoring": true
+    },
+    "227": {
+      "points": 20.394829814011906,
+      "memory": 0,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task227.onnx",
+      "relaxed_scoring": true
+    },
+    "228": {
+      "points": 18.130985549334294,
+      "memory": 849,
+      "params": 113,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task228.onnx",
+      "relaxed_scoring": true
+    },
+    "229": {
+      "points": 20.132465549544417,
+      "memory": 120,
+      "params": 10,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task229.onnx",
+      "relaxed_scoring": true
+    },
+    "230": {
+      "points": 18.86877351051686,
+      "memory": 0,
+      "params": 460,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task230.onnx",
+      "relaxed_scoring": true
+    },
+    "231": {
+      "points": 19.876036020596743,
+      "memory": 156,
+      "params": 12,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task231.onnx",
+      "relaxed_scoring": true
+    },
+    "232": {
+      "points": 17.748655016627787,
+      "memory": 0,
+      "params": 1410,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task232.onnx",
+      "relaxed_scoring": true
+    },
+    "233": {
+      "points": 15.009601075474576,
+      "memory": 21379,
+      "params": 437,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task233.onnx",
+      "relaxed_scoring": true
+    },
+    "234": {
+      "points": 17.030296416721345,
+      "memory": 2829,
+      "params": 63,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task234.onnx",
+      "relaxed_scoring": true
+    },
+    "235": {
+      "points": 20.140187595638327,
+      "memory": 48,
+      "params": 81,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task235.onnx",
+      "relaxed_scoring": true
+    },
+    "236": {
+      "points": 20.163718093048523,
+      "memory": 96,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task236.onnx",
+      "relaxed_scoring": true
+    },
+    "237": {
+      "points": 18.413828345145326,
+      "memory": 108,
+      "params": 617,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task237.onnx",
+      "relaxed_scoring": true
+    },
+    "238": {
+      "points": 17.523527618836095,
+      "memory": 1416,
+      "params": 350,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task238.onnx",
+      "relaxed_scoring": true
+    },
+    "239": {
+      "points": 18.146700906813923,
+      "memory": 897,
+      "params": 50,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task239.onnx",
+      "relaxed_scoring": true
+    },
+    "240": {
+      "points": 18.851531704082355,
+      "memory": 0,
+      "params": 468,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task240.onnx",
+      "relaxed_scoring": true
+    },
+    "241": {
+      "points": 25.0,
+      "memory": 0,
+      "params": 0,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task241.onnx",
+      "relaxed_scoring": true
+    },
+    "242": {
+      "points": 18.95499468596399,
+      "memory": 364,
+      "params": 58,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task242.onnx",
+      "relaxed_scoring": true
+    },
+    "243": {
+      "points": 16.73434983441967,
+      "memory": 2592,
+      "params": 1296,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task243.onnx",
+      "relaxed_scoring": true
+    },
+    "244": {
+      "points": 18.88631782016777,
+      "memory": 45,
+      "params": 407,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task244.onnx",
+      "relaxed_scoring": true
+    },
+    "245": {
+      "points": 17.832190815683557,
+      "memory": 1185,
+      "params": 112,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task245.onnx",
+      "relaxed_scoring": true
+    },
+    "246": {
+      "points": 17.971798567941995,
+      "memory": 756,
+      "params": 372,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task246.onnx",
+      "relaxed_scoring": true
+    },
+    "247": {
+      "points": 18.86660195700335,
+      "memory": 400,
+      "params": 61,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task247.onnx",
+      "relaxed_scoring": true
+    },
+    "248": {
+      "points": 20.030186700424,
+      "memory": 113,
+      "params": 31,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task248.onnx",
+      "relaxed_scoring": true
+    },
+    "249": {
+      "points": 20.212508257217955,
+      "memory": 0,
+      "params": 120,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task249.onnx",
+      "relaxed_scoring": true
+    },
+    "250": {
+      "points": 17.34035704543532,
+      "memory": 2052,
+      "params": 69,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task250.onnx",
+      "relaxed_scoring": true
+    },
+    "251": {
+      "points": 17.11279141418607,
+      "memory": 2628,
+      "params": 35,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task251.onnx",
+      "relaxed_scoring": true
+    },
+    "252": {
+      "points": 20.435651808532164,
+      "memory": 0,
+      "params": 96,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task252.onnx",
+      "relaxed_scoring": true
+    },
+    "253": {
+      "points": 19.021114235098878,
+      "memory": 348,
+      "params": 47,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task253.onnx",
+      "relaxed_scoring": true
+    },
+    "254": {
+      "points": 20.132465549544417,
+      "memory": 0,
+      "params": 130,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task254.onnx",
+      "relaxed_scoring": true
+    },
+    "255": {
+      "points": 16.304493273187347,
+      "memory": 5921,
+      "params": 55,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task255.onnx",
+      "relaxed_scoring": true
+    },
+    "256": {
+      "points": 17.344135982383943,
+      "memory": 2055,
+      "params": 58,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task256.onnx",
+      "relaxed_scoring": true
+    },
+    "257": {
+      "points": 20.263801551605503,
+      "memory": 0,
+      "params": 114,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task257.onnx",
+      "relaxed_scoring": true
+    },
+    "258": {
+      "points": 20.04417294239874,
+      "memory": 0,
+      "params": 142,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task258.onnx",
+      "relaxed_scoring": true
+    },
+    "259": {
+      "points": 18.206533867419992,
+      "memory": 844,
+      "params": 48,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task259.onnx",
+      "relaxed_scoring": true
+    },
+    "260": {
+      "points": 17.639260096941722,
+      "memory": 1289,
+      "params": 284,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task260.onnx",
+      "relaxed_scoring": true
+    },
+    "261": {
+      "points": 20.030186700424,
+      "memory": 0,
+      "params": 144,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task261.onnx",
+      "relaxed_scoring": true
+    },
+    "262": {
+      "points": 20.69593490679583,
+      "memory": 48,
+      "params": 26,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task262.onnx",
+      "relaxed_scoring": true
+    },
+    "263": {
+      "points": 18.710284429091004,
+      "memory": 441,
+      "params": 98,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task263.onnx",
+      "relaxed_scoring": true
+    },
+    "264": {
+      "points": 17.24680573011566,
+      "memory": 940,
+      "params": 1389,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task264.onnx",
+      "relaxed_scoring": true
+    },
+    "265": {
+      "points": 16.620460973882558,
+      "memory": 4325,
+      "params": 32,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task265.onnx",
+      "relaxed_scoring": true
+    },
+    "266": {
+      "points": 19.835214026076486,
+      "memory": 75,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task266.onnx",
+      "relaxed_scoring": true
+    },
+    "267": {
+      "points": 19.454822555520437,
+      "memory": 160,
+      "params": 96,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task267.onnx",
+      "relaxed_scoring": true
+    },
+    "268": {
+      "points": 16.9959684921473,
+      "memory": 2940,
+      "params": 53,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task268.onnx",
+      "relaxed_scoring": true
+    },
+    "269": {
+      "points": 18.436144473467873,
+      "memory": 685,
+      "params": 24,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task269.onnx",
+      "relaxed_scoring": true
+    },
+    "270": {
+      "points": 17.12450070755479,
+      "memory": 1962,
+      "params": 670,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task270.onnx",
+      "relaxed_scoring": true
+    },
+    "271": {
+      "points": 17.92081560539033,
+      "memory": 1141,
+      "params": 46,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task271.onnx",
+      "relaxed_scoring": true
+    },
+    "272": {
+      "points": 20.002787726235887,
+      "memory": 0,
+      "params": 148,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task272.onnx",
+      "relaxed_scoring": true
+    },
+    "273": {
+      "points": 18.636971896459535,
+      "memory": 0,
+      "params": 580,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task273.onnx",
+      "relaxed_scoring": true
+    },
+    "274": {
+      "points": 20.237826065202242,
+      "memory": 75,
+      "params": 42,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task274.onnx",
+      "relaxed_scoring": true
+    },
+    "275": {
+      "points": 18.509276465497493,
+      "memory": 25,
+      "params": 634,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task275.onnx",
+      "relaxed_scoring": true
+    },
+    "276": {
+      "points": 22.697414907005953,
+      "memory": 0,
+      "params": 10,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task276.onnx",
+      "relaxed_scoring": true
+    },
+    "277": {
+      "points": 16.9480219210977,
+      "memory": 3101,
+      "params": 39,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task277.onnx",
+      "relaxed_scoring": true
+    },
+    "278": {
+      "points": 16.58750087969843,
+      "memory": 4464,
+      "params": 39,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task278.onnx",
+      "relaxed_scoring": true
+    },
+    "279": {
+      "points": 16.37916777382428,
+      "memory": 5508,
+      "params": 38,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task279.onnx",
+      "relaxed_scoring": true
+    },
+    "280": {
+      "points": 16.670100707004273,
+      "memory": 3363,
+      "params": 783,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task280.onnx",
+      "relaxed_scoring": true
+    },
+    "281": {
+      "points": 17.826808257513402,
+      "memory": 1163,
+      "params": 141,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task281.onnx",
+      "relaxed_scoring": true
+    },
+    "282": {
+      "points": 18.899681047979936,
+      "memory": 407,
+      "params": 39,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task282.onnx",
+      "relaxed_scoring": true
+    },
+    "283": {
+      "points": 18.53541169631004,
+      "memory": 500,
+      "params": 142,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task283.onnx",
+      "relaxed_scoring": true
+    },
+    "284": {
+      "points": 17.17555406912238,
+      "memory": 2334,
+      "params": 167,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task284.onnx",
+      "relaxed_scoring": true
+    },
+    "285": {
+      "points": 15.257561868982286,
+      "memory": 16787,
+      "params": 238,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task285.onnx",
+      "relaxed_scoring": true
+    },
+    "286": {
+      "points": 14.91539995462659,
+      "memory": 21090,
+      "params": 2881,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task286.onnx",
+      "relaxed_scoring": true
+    },
+    "287": {
+      "points": 20.04417294239874,
+      "memory": 0,
+      "params": 142,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task287.onnx",
+      "relaxed_scoring": true
+    },
+    "288": {
+      "points": 18.55586874329956,
+      "memory": 598,
+      "params": 31,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task288.onnx",
+      "relaxed_scoring": true
+    },
+    "289": {
+      "points": 18.39065075683262,
+      "memory": 618,
+      "params": 124,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task289.onnx",
+      "relaxed_scoring": true
+    },
+    "290": {
+      "points": 19.35455310235676,
+      "memory": 266,
+      "params": 17,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task290.onnx",
+      "relaxed_scoring": true
+    },
+    "291": {
+      "points": 21.311120545886062,
+      "memory": 0,
+      "params": 40,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task291.onnx",
+      "relaxed_scoring": true
+    },
+    "292": {
+      "points": 20.61797336532612,
+      "memory": 0,
+      "params": 80,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task292.onnx",
+      "relaxed_scoring": true
+    },
+    "293": {
+      "points": 21.311120545886062,
+      "memory": 0,
+      "params": 40,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task293.onnx",
+      "relaxed_scoring": true
+    },
+    "294": {
+      "points": 18.601405065464792,
+      "memory": 500,
+      "params": 101,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task294.onnx",
+      "relaxed_scoring": true
+    },
+    "295": {
+      "points": 19.139213776534135,
+      "memory": 174,
+      "params": 177,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task295.onnx",
+      "relaxed_scoring": true
+    },
+    "296": {
+      "points": 20.500190329669735,
+      "memory": 0,
+      "params": 90,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task296.onnx",
+      "relaxed_scoring": true
+    },
+    "297": {
+      "points": 17.763660657245655,
+      "memory": 1350,
+      "params": 39,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task297.onnx",
+      "relaxed_scoring": true
+    },
+    "298": {
+      "points": 20.9056554377779,
+      "memory": 0,
+      "params": 60,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task298.onnx",
+      "relaxed_scoring": true
+    },
+    "299": {
+      "points": 21.087976994571854,
+      "memory": 0,
+      "params": 50,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task299.onnx",
+      "relaxed_scoring": true
+    },
+    "300": {
+      "points": 18.73469878726229,
+      "memory": 467,
+      "params": 59,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task300.onnx",
+      "relaxed_scoring": true
+    },
+    "301": {
+      "points": 17.960339650137925,
+      "memory": 1077,
+      "params": 64,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task301.onnx",
+      "relaxed_scoring": true
+    },
+    "302": {
+      "points": 17.767266863822385,
+      "memory": 1072,
+      "params": 312,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task302.onnx",
+      "relaxed_scoring": true
+    },
+    "303": {
+      "points": 17.72068116458538,
+      "memory": 1428,
+      "params": 22,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task303.onnx",
+      "relaxed_scoring": true
+    },
+    "304": {
+      "points": 19.2962175253438,
+      "memory": 0,
+      "params": 300,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task304.onnx",
+      "relaxed_scoring": true
+    },
+    "305": {
+      "points": 18.544801436659878,
+      "memory": 296,
+      "params": 340,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task305.onnx",
+      "relaxed_scoring": true
+    },
+    "306": {
+      "points": 20.016393378291664,
+      "memory": 0,
+      "params": 146,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task306.onnx",
+      "relaxed_scoring": true
+    },
+    "307": {
+      "points": 23.3905620875659,
+      "memory": 0,
+      "params": 5,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task307.onnx",
+      "relaxed_scoring": true
+    },
+    "308": {
+      "points": 17.708343790825538,
+      "memory": 1365,
+      "params": 103,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task308.onnx",
+      "relaxed_scoring": true
+    },
+    "309": {
+      "points": 22.697414907005953,
+      "memory": 0,
+      "params": 10,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task309.onnx",
+      "relaxed_scoring": true
+    },
+    "310": {
+      "points": 18.614805601002274,
+      "memory": 230,
+      "params": 363,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task310.onnx",
+      "relaxed_scoring": true
+    },
+    "311": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task311.onnx",
+      "relaxed_scoring": true
+    },
+    "312": {
+      "points": 22.00426772644601,
+      "memory": 0,
+      "params": 20,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task312.onnx",
+      "relaxed_scoring": true
+    },
+    "313": {
+      "points": 20.087345114263947,
+      "memory": 0,
+      "params": 136,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task313.onnx",
+      "relaxed_scoring": true
+    },
+    "314": {
+      "points": 20.394829814011906,
+      "memory": 0,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task314.onnx",
+      "relaxed_scoring": true
+    },
+    "315": {
+      "points": 20.002787726235887,
+      "memory": 0,
+      "params": 148,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task315.onnx",
+      "relaxed_scoring": true
+    },
+    "316": {
+      "points": 18.993646840398267,
+      "memory": 359,
+      "params": 47,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task316.onnx",
+      "relaxed_scoring": true
+    },
+    "317": {
+      "points": 20.016393378291664,
+      "memory": 128,
+      "params": 18,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task317.onnx",
+      "relaxed_scoring": true
+    },
+    "318": {
+      "points": 20.394829814011906,
+      "memory": 0,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task318.onnx",
+      "relaxed_scoring": true
+    },
+    "319": {
+      "points": 16.626677179003465,
+      "memory": 4162,
+      "params": 168,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task319.onnx",
+      "relaxed_scoring": true
+    },
+    "320": {
+      "points": 18.35360948515227,
+      "memory": 448,
+      "params": 322,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task320.onnx",
+      "relaxed_scoring": true
+    },
+    "321": {
+      "points": 20.002787726235887,
+      "memory": 0,
+      "params": 148,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task321.onnx",
+      "relaxed_scoring": true
+    },
+    "322": {
+      "points": 20.69593490679583,
+      "memory": 0,
+      "params": 74,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task322.onnx",
+      "relaxed_scoring": true
+    },
+    "323": {
+      "points": 17.606121709892243,
+      "memory": 909,
+      "params": 717,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task323.onnx",
+      "relaxed_scoring": true
+    },
+    "324": {
+      "points": 15.945728813673707,
+      "memory": 6969,
+      "params": 1586,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task324.onnx",
+      "relaxed_scoring": true
+    },
+    "325": {
+      "points": 17.698177657862068,
+      "memory": 517,
+      "params": 966,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task325.onnx",
+      "relaxed_scoring": true
+    },
+    "326": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task326.onnx",
+      "relaxed_scoring": true
+    },
+    "327": {
+      "points": 18.54166171665521,
+      "memory": 486,
+      "params": 152,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task327.onnx",
+      "relaxed_scoring": true
+    },
+    "328": {
+      "points": 16.452665651671776,
+      "memory": 5027,
+      "params": 126,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task328.onnx",
+      "relaxed_scoring": true
+    },
+    "329": {
+      "points": 18.04345455684843,
+      "memory": 1021,
+      "params": 29,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task329.onnx",
+      "relaxed_scoring": true
+    },
+    "330": {
+      "points": 17.34035704543532,
+      "memory": 1980,
+      "params": 141,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task330.onnx",
+      "relaxed_scoring": true
+    },
+    "331": {
+      "points": 18.78539190157781,
+      "memory": 400,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task331.onnx",
+      "relaxed_scoring": true
+    },
+    "332": {
+      "points": 20.61797336532612,
+      "memory": 0,
+      "params": 80,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task332.onnx",
+      "relaxed_scoring": true
+    },
+    "333": {
+      "points": 17.216359403778746,
+      "memory": 2340,
+      "params": 61,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task333.onnx",
+      "relaxed_scoring": true
+    },
+    "334": {
+      "points": 20.557348743509685,
+      "memory": 36,
+      "params": 49,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task334.onnx",
+      "relaxed_scoring": true
+    },
+    "335": {
+      "points": 18.082294390164694,
+      "memory": 932,
+      "params": 78,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task335.onnx",
+      "relaxed_scoring": true
+    },
+    "337": {
+      "points": 22.697414907005953,
+      "memory": 0,
+      "params": 10,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task337.onnx",
+      "relaxed_scoring": true
+    },
+    "338": {
+      "points": 15.912053276237884,
+      "memory": 8581,
+      "params": 267,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task338.onnx",
+      "relaxed_scoring": true
+    },
+    "339": {
+      "points": 20.058357577390694,
+      "memory": 40,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task339.onnx",
+      "relaxed_scoring": true
+    },
+    "340": {
+      "points": 16.867293510306737,
+      "memory": 3284,
+      "params": 120,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task340.onnx",
+      "relaxed_scoring": true
+    },
+    "341": {
+      "points": 17.741587849404695,
+      "memory": 1387,
+      "params": 33,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task341.onnx",
+      "relaxed_scoring": true
+    },
+    "342": {
+      "points": 18.584903040828404,
+      "memory": 514,
+      "params": 97,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task342.onnx",
+      "relaxed_scoring": true
+    },
+    "343": {
+      "points": 17.89175586026846,
+      "memory": 1147,
+      "params": 75,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task343.onnx",
+      "relaxed_scoring": true
+    },
+    "344": {
+      "points": 18.460414044382333,
+      "memory": 0,
+      "params": 692,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task344.onnx",
+      "relaxed_scoring": true
+    },
+    "345": {
+      "points": 17.98788470569362,
+      "memory": 0,
+      "params": 1110,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task345.onnx",
+      "relaxed_scoring": true
+    },
+    "346": {
+      "points": 17.865906278807135,
+      "memory": 1224,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task346.onnx",
+      "relaxed_scoring": true
+    },
+    "348": {
+      "points": 18.523027637110317,
+      "memory": 553,
+      "params": 97,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task348.onnx",
+      "relaxed_scoring": true
+    },
+    "349": {
+      "points": 15.56811735807658,
+      "memory": 11733,
+      "params": 747,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task349.onnx",
+      "relaxed_scoring": true
+    },
+    "350": {
+      "points": 19.013547994715562,
+      "memory": 0,
+      "params": 398,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task350.onnx",
+      "relaxed_scoring": true
+    },
+    "351": {
+      "points": 18.097257262841406,
+      "memory": 937,
+      "params": 58,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task351.onnx",
+      "relaxed_scoring": true
+    },
+    "352": {
+      "points": 18.86877351051686,
+      "memory": 0,
+      "params": 460,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task352.onnx",
+      "relaxed_scoring": true
+    },
+    "353": {
+      "points": 19.5028317747068,
+      "memory": 182,
+      "params": 62,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task353.onnx",
+      "relaxed_scoring": true
+    },
+    "354": {
+      "points": 17.367598873398546,
+      "memory": 1990,
+      "params": 74,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task354.onnx",
+      "relaxed_scoring": true
+    },
+    "355": {
+      "points": 19.38687189361193,
+      "memory": 264,
+      "params": 10,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task355.onnx",
+      "relaxed_scoring": true
+    },
+    "356": {
+      "points": 18.959745288722587,
+      "memory": 0,
+      "params": 420,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task356.onnx",
+      "relaxed_scoring": true
+    },
+    "357": {
+      "points": 19.368788218178636,
+      "memory": 247,
+      "params": 32,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task357.onnx",
+      "relaxed_scoring": true
+    },
+    "358": {
+      "points": 17.14290613509751,
+      "memory": 2495,
+      "params": 89,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task358.onnx",
+      "relaxed_scoring": true
+    },
+    "359": {
+      "points": 16.755665952143907,
+      "memory": 3792,
+      "params": 14,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task359.onnx",
+      "relaxed_scoring": true
+    },
+    "360": {
+      "points": 19.478539082137754,
+      "memory": 0,
+      "params": 250,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task360.onnx",
+      "relaxed_scoring": true
+    },
+    "361": {
+      "points": 16.565319230158227,
+      "memory": 4244,
+      "params": 360,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task361.onnx",
+      "relaxed_scoring": true
+    },
+    "362": {
+      "points": 20.20420945440326,
+      "memory": 40,
+      "params": 81,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task362.onnx",
+      "relaxed_scoring": true
+    },
+    "363": {
+      "points": 16.820800201576915,
+      "memory": 3258,
+      "params": 308,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task363.onnx",
+      "relaxed_scoring": true
+    },
+    "364": {
+      "points": 15.408487212484697,
+      "memory": 14540,
+      "params": 100,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task364.onnx",
+      "relaxed_scoring": true
+    },
+    "365": {
+      "points": 17.35603805099747,
+      "memory": 2043,
+      "params": 45,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task365.onnx",
+      "relaxed_scoring": true
+    },
+    "366": {
+      "points": 14.991657059361492,
+      "memory": 21990,
+      "params": 221,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task366.onnx",
+      "relaxed_scoring": true
+    },
+    "367": {
+      "points": 15.458487124497507,
+      "memory": 13700,
+      "params": 226,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task367.onnx",
+      "relaxed_scoring": true
+    },
+    "368": {
+      "points": 17.615389616823027,
+      "memory": 1580,
+      "params": 31,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task368.onnx",
+      "relaxed_scoring": true
+    },
+    "369": {
+      "points": 18.22921057609102,
+      "memory": 800,
+      "params": 72,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task369.onnx",
+      "relaxed_scoring": true
+    },
+    "370": {
+      "points": 16.80936831909646,
+      "memory": 3108,
+      "params": 499,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task370.onnx",
+      "relaxed_scoring": true
+    },
+    "371": {
+      "points": 18.853670742331104,
+      "memory": 376,
+      "params": 91,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task371.onnx",
+      "relaxed_scoring": true
+    },
+    "372": {
+      "points": 19.113895968549844,
+      "memory": 0,
+      "params": 360,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task372.onnx",
+      "relaxed_scoring": true
+    },
+    "373": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task373.onnx",
+      "relaxed_scoring": true
+    },
+    "374": {
+      "points": 18.02365192955225,
+      "memory": 436,
+      "params": 635,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task374.onnx",
+      "relaxed_scoring": true
+    },
+    "375": {
+      "points": 19.210039829102747,
+      "memory": 119,
+      "params": 208,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task375.onnx",
+      "relaxed_scoring": true
+    },
+    "376": {
+      "points": 19.937404966973034,
+      "memory": 128,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task376.onnx",
+      "relaxed_scoring": true
+    },
+    "377": {
+      "points": 17.544123312508177,
+      "memory": 1644,
+      "params": 86,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task377.onnx",
+      "relaxed_scoring": true
+    },
+    "378": {
+      "points": 17.40914787631142,
+      "memory": 1934,
+      "params": 46,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task378.onnx",
+      "relaxed_scoring": true
+    },
+    "379": {
+      "points": 16.17341216922633,
+      "memory": 6701,
+      "params": 112,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task379.onnx",
+      "relaxed_scoring": true
+    },
+    "380": {
+      "points": 20.40488014986541,
+      "memory": 0,
+      "params": 99,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task380.onnx",
+      "relaxed_scoring": true
+    },
+    "381": {
+      "points": 17.532628933082442,
+      "memory": 1684,
+      "params": 66,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task381.onnx",
+      "relaxed_scoring": true
+    },
+    "382": {
+      "points": 16.65597042759295,
+      "memory": 4000,
+      "params": 205,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task382.onnx",
+      "relaxed_scoring": true
+    },
+    "383": {
+      "points": 17.139429214461337,
+      "memory": 2212,
+      "params": 381,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task383.onnx",
+      "relaxed_scoring": true
+    },
+    "384": {
+      "points": 18.824132729894238,
+      "memory": 428,
+      "params": 53,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task384.onnx",
+      "relaxed_scoring": true
+    },
+    "385": {
+      "points": 21.598802618337846,
+      "memory": 0,
+      "params": 30,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task385.onnx",
+      "relaxed_scoring": true
+    },
+    "386": {
+      "points": 20.31786877287578,
+      "memory": 0,
+      "params": 108,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task386.onnx",
+      "relaxed_scoring": true
+    },
+    "387": {
+      "points": 16.70995838129551,
+      "memory": 3842,
+      "params": 142,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task387.onnx",
+      "relaxed_scoring": true
+    },
+    "388": {
+      "points": 18.098262793343427,
+      "memory": 80,
+      "params": 914,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task388.onnx",
+      "relaxed_scoring": true
+    },
+    "389": {
+      "points": 20.992666814767528,
+      "memory": 0,
+      "params": 55,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task389.onnx",
+      "relaxed_scoring": true
+    },
+    "390": {
+      "points": 17.099363386981995,
+      "memory": 2595,
+      "params": 104,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task390.onnx",
+      "relaxed_scoring": true
+    },
+    "391": {
+      "points": 19.93109579777977,
+      "memory": 135,
+      "params": 24,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task391.onnx",
+      "relaxed_scoring": true
+    },
+    "392": {
+      "points": 17.936096038527932,
+      "memory": 358,
+      "params": 811,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task392.onnx",
+      "relaxed_scoring": true
+    },
+    "393": {
+      "points": 20.237826065202242,
+      "memory": 105,
+      "params": 12,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task393.onnx",
+      "relaxed_scoring": true
+    },
+    "394": {
+      "points": 18.748096116834112,
+      "memory": 460,
+      "params": 59,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task394.onnx",
+      "relaxed_scoring": true
+    },
+    "395": {
+      "points": 19.89405452609942,
+      "memory": 144,
+      "params": 21,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task395.onnx",
+      "relaxed_scoring": true
+    },
+    "396": {
+      "points": 16.822765114489805,
+      "memory": 3481,
+      "params": 78,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task396.onnx",
+      "relaxed_scoring": true
+    },
+    "397": {
+      "points": 17.08137134665776,
+      "memory": 2562,
+      "params": 186,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task397.onnx",
+      "relaxed_scoring": true
+    },
+    "398": {
+      "points": 17.30515192761539,
+      "memory": 1006,
+      "params": 1191,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task398.onnx",
+      "relaxed_scoring": true
+    },
+    "399": {
+      "points": 20.9056554377779,
+      "memory": 31,
+      "params": 29,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task399.onnx",
+      "relaxed_scoring": true
+    },
+    "400": {
+      "points": 18.01066473402544,
+      "memory": 1032,
+      "params": 53,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task400.onnx",
+      "relaxed_scoring": true
+    },
+    "336": {
+      "points": 17.610436046322363,
+      "memory": 400,
+      "params": 1219,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task336.onnx",
+      "relaxed_scoring": true
+    },
+    "347": {
+      "points": 18.913225273087694,
+      "memory": 333,
+      "params": 107,
+      "path": "/home/zuhair/Desktop/project/neurogolf-2026/networks/task347.onnx",
+      "relaxed_scoring": true
+    }
+  },
+  "missing": [],
+  "failed": [],
+  "total_points": 7418.520054196283,
+  "scored": 400,
+  "requested": 400
+}
