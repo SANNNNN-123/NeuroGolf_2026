@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeuroGolf Dashboard — networks/</title>
+<style>
+:root {
+  --bg: #f6f7f9;
+  --panel: #fff;
+  --ink: #111827;
+  --muted: #6b7280;
+  --line: #d7dce2;
+  --accent: #1459a8;
+  --mono: Menlo, Consolas, ui-monospace, monospace;
+  --sans: "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 20px 14px;
+}
+h1 { margin: 0 0 4px; font-size: 22px; }
+.sub {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.sub code {
+  font-family: var(--mono);
+  font-size: 12px;
+  background: #eef2f7;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(110px, 1fr));
+  gap: 8px;
+}
+.metric {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.metric span { display: block; color: var(--muted); font-size: 12px; }
+.metric b { font-size: 18px; font-variant-numeric: tabular-nums; }
+main { padding: 16px 20px 40px; max-width: 1400px; margin: 0 auto; }
+section { margin-bottom: 28px; }
+h2 { margin: 0 0 10px; font-size: 17px; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+}
+.row { display: grid; gap: 14px; }
+.row.two { grid-template-columns: 1fr 1fr; }
+.row.tiles-ctrl { grid-template-columns: 180px 1fr; align-items: start; }
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+.legend-bar {
+  height: 12px;
+  width: 200px;
+  border-radius: 6px;
+}
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 3px;
+  font-family: var(--mono);
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.05;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.10);
+}
+.tile .n { font-size: 12px; font-weight: 700; }
+.tile .p { font-size: 9px; opacity: .9; }
+.tile.fail { outline: 2px solid #7f1d1d; }
+.toolbar {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+label.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+input, select, button {
+  font: inherit;
+  border: 1px solid #c8ced6;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: #fff;
+  color: var(--ink);
+}
+button { cursor: pointer; }
+button:hover { background: #f3f4f6; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+th, td {
+  border-bottom: 1px solid var(--line);
+  padding: 7px 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+th {
+  position: sticky;
+  top: 0;
+  background: #f8fafc;
+  color: var(--muted);
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+th:hover { color: var(--ink); }
+tr:hover td { background: #f3f7fc; }
+tr.selected td { background: #e8f1fb; }
+.table-wrap {
+  max-height: 520px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.bars { display: flex; flex-direction: column; gap: 6px; }
+.bar-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 52px;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+}
+.bar-track {
+  height: 14px;
+  background: #eef2f7;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 4px;
+}
+.hist {
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+  height: 120px;
+  border-bottom: 1px solid var(--line);
+  padding-top: 8px;
+}
+.hist-bin {
+  flex: 1;
+  background: #60a5fa;
+  min-width: 2px;
+  border-radius: 2px 2px 0 0;
+}
+.caption { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
+.error {
+  background: #fff4f4;
+  border: 1px solid #f1b0b0;
+  color: #7f1d1d;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin: 16px 20px;
+}
+.loading { color: var(--muted); padding: 40px 20px; text-align: center; }
+.chip {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #eef2f7;
+  color: var(--muted);
+  margin-left: 6px;
+}
+@media (max-width: 1000px) {
+  .kpis { grid-template-columns: repeat(3, 1fr); }
+  .row.two, .row.tiles-ctrl, .toolbar { grid-template-columns: 1fr; }
+  .tiles { grid-template-columns: repeat(10, 1fr); }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>NeuroGolf Dashboard <span class="chip" id="source-chip">networks/</span></h1>
+  <div class="sub" id="source-line">Loading scoreboard for <code>networks/</code>…</div>
+  <div class="kpis" id="kpis"></div>
+</header>
+<div id="status" class="loading">Loading reports… Serve from repo root: <code>python -m http.server 8765</code> then open <code>/tools/dashboard.html</code></div>
+<main id="app" hidden>
+  <section>
+    <h2>Task tiles</h2>
+    <div class="panel">
+      <div class="row tiles-ctrl">
+        <label class="field">Order
+          <select id="tile-order">
+            <option value="task">task number</option>
+            <option value="low">score (low first)</option>
+            <option value="high">score (high first)</option>
+          </select>
+        </label>
+        <div>
+          <div class="caption">Each tile is one task from <code>networks/</code>, coloured by score. Click to jump to the table row.</div>
+          <div class="legend">
+            <span>low (14)</span>
+            <div class="legend-bar" id="legend-bar"></div>
+            <span>high (25)</span>
+          </div>
+        </div>
+      </div>
+      <div class="tiles" id="tiles" style="margin-top:12px"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Score bands</h2>
+    <div class="row two">
+      <div class="panel">
+        <table>
+          <thead><tr><th>band</th><th>count</th><th>pct</th><th>sum_points</th></tr></thead>
+          <tbody id="bands-body"></tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <div class="bars" id="band-bars"></div>
+        <div class="caption">Points distribution</div>
+        <div class="hist" id="hist"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Method / mechanism</h2>
+    <div class="row two">
+      <div class="panel">
+        <div class="caption">Status / method prefix</div>
+        <table>
+          <thead><tr><th>method</th><th>count</th><th>avg_points</th></tr></thead>
+          <tbody id="method-body"></tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <div class="caption">Operator usage (top 20 from inventory)</div>
+        <div class="bars" id="op-bars"></div>
+        <details style="margin-top:10px">
+          <summary class="caption" style="cursor:pointer">All operators</summary>
+          <div class="table-wrap" style="max-height:240px;margin-top:8px">
+            <table>
+              <thead><tr><th>op</th><th>count</th></tr></thead>
+              <tbody id="op-body"></tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>All tasks</h2>
+    <div class="toolbar">
+      <label class="field">Score band
+        <select id="band-filter" multiple size="5"></select>
+      </label>
+      <label class="field">Method
+        <select id="method-filter" multiple size="5"></select>
+      </label>
+      <label class="field">Search task # or arc_id
+        <input id="search" placeholder="e.g. 42 or arc id" autocomplete="off">
+      </label>
+    </div>
+    <div class="caption" id="table-caption"></div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr id="table-head"></tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script>
+const MAX_POINTS = 25;
+const BANDS = ["25 (max)", "22-25", "20-22", "18-20", "<18"];
+const COLS = [
+  ["task", "task"],
+  ["arc_id", "arc_id"],
+  ["points", "points"],
+  ["memory", "memory"],
+  ["params", "params"],
+  ["mem_params", "mem_params"],
+  ["method", "method"],
+  ["headroom", "headroom"],
+  ["ok", "ok"],
+  ["filesize", "filesize"],
+  ["n_ops", "n_ops"],
+  ["ops", "ops"],
+];
+
+const PATHS = {
+  // harness2 folder eval (tasks dict + failed list).
+  eval: "../reports/eval_networks_h2.json",
+  inventory: "../reports/global_layer_inventory.json",
+  arc: "../reports/arc_mapping.json",
+  manifest: "../reports/manifest.json",
+};
+
+let ALL_ROWS = [];
+let sortKey = "points";
+let sortAsc = true;
+
+function bandOf(points) {
+  const p = Number(points);
+  if (p >= 24.999) return "25 (max)";
+  if (p >= 22) return "22-25";
+  if (p >= 20) return "20-22";
+  if (p >= 18) return "18-20";
+  return "<18";
+}
+
+function pointsToColor(points, lo = 14, hi = MAX_POINTS) {
+  const span = Math.max(1e-9, hi - lo);
+  const t = Math.min(1, Math.max(0, (Number(points) - lo) / span));
+  const hue = t * 130;
+  return `hsl(${hue.toFixed(0)}, 68%, 42%)`;
+}
+
+function taskOpMap(byOp) {
+  const out = {};
+  for (const [op, tasks] of Object.entries(byOp || {})) {
+    for (const t of tasks) {
+      const n = Number(t);
+      (out[n] ||= new Set()).add(op);
+    }
+  }
+  return out;
+}
+
+/** Normalize eval JSON into a flat tasks_detail-like list. */
+function evalToDetail(ev) {
+  // Older reports: [{task, ok, points, memory, params, ...}, ...]
+  if (Array.isArray(ev.tasks_detail) && ev.tasks_detail.length) {
+    return ev.tasks_detail;
+  }
+  // harness2 folder report: { tasks: { "1": {...} }, failed: [{task, ...}] }
+  if (ev.tasks && typeof ev.tasks === "object" && !Array.isArray(ev.tasks)) {
+    const byTask = {};
+    for (const [key, value] of Object.entries(ev.tasks)) {
+      const n = Number(key);
+      byTask[n] = {
+        task: n,
+        ok: true,
+        points: Number(value.points || 0),
+        memory: Number(value.memory || 0),
+        params: Number(value.params || 0),
+        filesize: value.filesize != null ? Number(value.filesize) : null,
+        error: null,
+      };
+    }
+    for (const f of ev.failed || []) {
+      const n = Number(f.task);
+      byTask[n] = {
+        task: n,
+        ok: false,
+        points: 0,
+        memory: Number(f.memory || 0),
+        params: Number(f.params || 0),
+        filesize: null,
+        error: f.error || `fail=${f.fail ?? "?"}`,
+      };
+    }
+    for (const n of ev.missing || []) {
+      const t = Number(n);
+      if (!(t in byTask)) {
+        byTask[t] = {
+          task: t,
+          ok: false,
+          points: 0,
+          memory: 0,
+          params: 0,
+          filesize: null,
+          error: "missing",
+        };
+      }
+    }
+    return Object.values(byTask).sort((a, b) => a.task - b.task);
+  }
+  return [];
+}
+
+function buildRowsFromEval(tasksDetail, byOp, arcMapping) {
+  const taskOps = taskOpMap(byOp);
+  const rows = [];
+  for (const d of tasksDetail || []) {
+    const n = Number(d.task);
+    const ops = [...(taskOps[n] || [])].sort();
+    const points = Number(d.points || 0);
+    const memory = Number(d.memory || 0);
+    const params = Number(d.params || 0);
+    const ok = Boolean(d.ok);
+    const method = ok ? "networks:ok" : "networks:fail";
+    const arc = arcMapping[String(n)] || arcMapping[n] || {};
+    rows.push({
+      task: n,
+      arc_id: String(arc.arc_id || ""),
+      points,
+      memory,
+      params,
+      mem_params: memory + params,
+      method,
+      method_prefix: method.split(":")[0],
+      headroom: Math.round((MAX_POINTS - points) * 1e6) / 1e6,
+      n_ops: ops.length,
+      ops: ops.join(", "),
+      band: bandOf(points),
+      ok,
+      filesize: d.filesize != null ? Number(d.filesize) : null,
+      error: d.error || "",
+      onnx: `networks/task${String(n).padStart(3, "0")}.onnx`,
+    });
+  }
+  rows.sort((a, b) => a.task - b.task);
+  return rows;
+}
+
+function buildRowsFromManifest(tasks, byOp, arcMapping) {
+  const taskOps = taskOpMap(byOp);
+  const rows = [];
+  for (const [key, value] of Object.entries(tasks || {})) {
+    const n = Number(key);
+    const ops = [...(taskOps[n] || [])].sort();
+    const points = Number(value.points || 0);
+    const memory = Number(value.memory || 0);
+    const params = Number(value.params || 0);
+    const method = String(value.method || "");
+    const arc = arcMapping[String(n)] || arcMapping[key] || {};
+    rows.push({
+      task: n,
+      arc_id: String(arc.arc_id || ""),
+      points,
+      memory,
+      params,
+      mem_params: memory + params,
+      method,
+      method_prefix: method.split(":")[0] || "(none)",
+      headroom: Math.round((MAX_POINTS - points) * 1e6) / 1e6,
+      n_ops: ops.length,
+      ops: ops.join(", "),
+      band: bandOf(points),
+      ok: points > 0,
+      filesize: null,
+      error: "",
+      onnx: `networks/task${String(n).padStart(3, "0")}.onnx`,
+    });
+  }
+  rows.sort((a, b) => a.task - b.task);
+  return rows;
+}
+
+function kpis(rows) {
+  const count = rows.length;
+  const total = rows.reduce((s, r) => s + r.points, 0);
+  const theoretical = count * MAX_POINTS;
+  return {
+    task_count: count,
+    total_points: Math.round(total * 100) / 100,
+    theoretical_max: Math.round(theoretical * 100) / 100,
+    gap_to_max: Math.round((theoretical - total) * 100) / 100,
+    max_count: rows.filter((r) => r.points >= 24.999).length,
+    low_count: rows.filter((r) => r.points < 18).length,
+  };
+}
+
+function scoreBands(rows) {
+  const total = Math.max(1, rows.length);
+  return BANDS.map((band) => {
+    const members = rows.filter((r) => r.band === band);
+    return {
+      band,
+      count: members.length,
+      pct: Math.round((1000 * members.length) / total) / 10,
+      sum_points: Math.round(members.reduce((s, r) => s + r.points, 0) * 100) / 100,
+    };
+  });
+}
+
+function methodBreakdown(rows) {
+  const prefixes = {};
+  for (const r of rows) {
+    const key = r.method_prefix || "(none)";
+    (prefixes[key] ||= []).push(r.points);
+  }
+  return Object.entries(prefixes)
+    .map(([method, pts]) => ({
+      method,
+      count: pts.length,
+      avg_points: Math.round((pts.reduce((a, b) => a + b, 0) / pts.length) * 100) / 100,
+    }))
+    .sort((a, b) => b.count - a.count);
+}
+
+function opBreakdown(byOp) {
+  return Object.entries(byOp || {})
+    .map(([op, tasks]) => ({ op, count: tasks.length }))
+    .sort((a, b) => b.count - a.count);
+}
+
+function pointsHistogram(rows, step = 0.5) {
+  if (!rows.length) return { labels: [], counts: [] };
+  const points = rows.map((r) => r.points);
+  const lo = Math.floor(Math.min(...points));
+  const hi = MAX_POINTS;
+  const labels = [];
+  const counts = [];
+  for (let edge = lo; edge < hi; edge += step) {
+    labels.push(edge.toFixed(1));
+    counts.push(points.filter((p) => p >= edge && p < edge + step).length);
+  }
+  return { labels, counts };
+}
+
+function fmt(n, digits = 2) {
+  return Number(n).toLocaleString(undefined, {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
+  });
+}
+
+function esc(s) {
+  return String(s)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function renderKpis(rows) {
+  const k = kpis(rows);
+  const items = [
+    ["total points", fmt(k.total_points)],
+    ["tasks", String(k.task_count)],
+    ["theoretical max", fmt(k.theoretical_max, 0)],
+    ["gap to max", fmt(k.gap_to_max)],
+    ["at 25 (max)", String(k.max_count)],
+    ["below 18 (low)", String(k.low_count)],
+  ];
+  document.getElementById("kpis").innerHTML = items
+    .map(([label, value]) => `<div class="metric"><span>${esc(label)}</span><b>${esc(value)}</b></div>`)
+    .join("");
+}
+
+function orderRows(rows, mode) {
+  if (mode === "low") return [...rows].sort((a, b) => a.points - b.points);
+  if (mode === "high") return [...rows].sort((a, b) => b.points - a.points);
+  return [...rows].sort((a, b) => a.task - b.task);
+}
+
+function renderTiles(rows) {
+  const mode = document.getElementById("tile-order").value;
+  const ordered = orderRows(rows, mode);
+  const stops = [0, 0.25, 0.5, 0.75, 1]
+    .map((t) => pointsToColor(14 + t * (MAX_POINTS - 14)))
+    .join(",");
+  document.getElementById("legend-bar").style.background = `linear-gradient(to right, ${stops})`;
+  document.getElementById("tiles").innerHTML = ordered
+    .map((r) => {
+      const title = `task ${r.task} · ${r.points.toFixed(3)} pts · mem ${r.memory} · params ${r.params} · ${r.method}${r.error ? " · " + r.error : ""}`;
+      return `<a class="tile${r.ok ? "" : " fail"}" href="#task-${r.task}" data-task="${r.task}" title="${esc(title)}" style="background:${pointsToColor(r.points)}">
+        <span class="n">${r.task}</span>
+        <span class="p">${r.points.toFixed(1)}</span>
+      </a>`;
+    })
+    .join("");
+  document.querySelectorAll(".tile").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      selectTask(Number(el.dataset.task));
+    });
+  });
+}
+
+function renderBands(rows) {
+  const bands = scoreBands(rows);
+  const maxCount = Math.max(1, ...bands.map((b) => b.count));
+  document.getElementById("bands-body").innerHTML = bands
+    .map(
+      (b) =>
+        `<tr><td>${esc(b.band)}</td><td>${b.count}</td><td>${b.pct}%</td><td>${fmt(b.sum_points)}</td></tr>`
+    )
+    .join("");
+  document.getElementById("band-bars").innerHTML = bands
+    .map((b) => {
+      const pct = (100 * b.count) / maxCount;
+      return `<div class="bar-row"><div>${esc(b.band)}</div><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><div>${b.count}</div></div>`;
+    })
+    .join("");
+
+  const hist = pointsHistogram(rows);
+  const maxH = Math.max(1, ...hist.counts);
+  document.getElementById("hist").innerHTML = hist.counts
+    .map((c, i) => {
+      const h = (100 * c) / maxH;
+      return `<div class="hist-bin" title="${hist.labels[i]}: ${c}" style="height:${h}%"></div>`;
+    })
+    .join("");
+}
+
+function renderMethods(rows, byOp) {
+  const methods = methodBreakdown(rows);
+  document.getElementById("method-body").innerHTML = methods
+    .map(
+      (m) =>
+        `<tr><td>${esc(m.method)}</td><td>${m.count}</td><td>${fmt(m.avg_points)}</td></tr>`
+    )
+    .join("");
+
+  const ops = opBreakdown(byOp);
+  const top = ops.slice(0, 20);
+  const maxOp = Math.max(1, ...top.map((o) => o.count));
+  document.getElementById("op-bars").innerHTML = top.length
+    ? top
+        .map((o) => {
+          const pct = (100 * o.count) / maxOp;
+          return `<div class="bar-row"><div title="${esc(o.op)}">${esc(o.op)}</div><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div><div>${o.count}</div></div>`;
+        })
+        .join("")
+    : `<div class="caption">No operator inventory loaded.</div>`;
+  document.getElementById("op-body").innerHTML = ops
+    .map((o) => `<tr><td>${esc(o.op)}</td><td>${o.count}</td></tr>`)
+    .join("");
+}
+
+function fillFilters(rows) {
+  const bandSel = document.getElementById("band-filter");
+  bandSel.innerHTML = BANDS.map(
+    (b) => `<option value="${esc(b)}" selected>${esc(b)}</option>`
+  ).join("");
+  const prefixes = [...new Set(rows.map((r) => r.method_prefix || "(none)"))].sort();
+  const methodSel = document.getElementById("method-filter");
+  methodSel.innerHTML = prefixes
+    .map((p) => `<option value="${esc(p)}" selected>${esc(p)}</option>`)
+    .join("");
+}
+
+function selectedOptions(sel) {
+  return [...sel.selectedOptions].map((o) => o.value);
+}
+
+function filteredRows() {
+  const bands = new Set(selectedOptions(document.getElementById("band-filter")));
+  const methods = new Set(selectedOptions(document.getElementById("method-filter")));
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  let rows = ALL_ROWS.filter(
+    (r) => bands.has(r.band) && methods.has(r.method_prefix || "(none)")
+  );
+  if (q) {
+    rows = rows.filter(
+      (r) => String(r.task).includes(q) || r.arc_id.toLowerCase().includes(q)
+    );
+  }
+  const dir = sortAsc ? 1 : -1;
+  rows = [...rows].sort((a, b) => {
+    const av = a[sortKey];
+    const bv = b[sortKey];
+    if (typeof av === "number" && typeof bv === "number") return (av - bv) * dir;
+    return String(av).localeCompare(String(bv)) * dir;
+  });
+  return rows;
+}
+
+function renderTable() {
+  const rows = filteredRows();
+  document.getElementById("table-caption").textContent =
+    `${rows.length} tasks (click a column header to sort; click a row to highlight).`;
+  document.getElementById("table-head").innerHTML = COLS.map(([key, label]) => {
+    const mark = sortKey === key ? (sortAsc ? " ▲" : " ▼") : "";
+    return `<th data-key="${key}">${label}${mark}</th>`;
+  }).join("");
+  document.getElementById("table-body").innerHTML = rows
+    .map((r) => {
+      const cells = COLS.map(([key]) => {
+        let v = r[key];
+        if (key === "points" || key === "headroom") v = Number(v).toFixed(3);
+        if (key === "ok") v = r.ok ? "✓" : "✗";
+        if (key === "filesize" && v == null) v = "";
+        return `<td>${esc(v)}</td>`;
+      }).join("");
+      return `<tr id="task-${r.task}" data-task="${r.task}" title="${esc(r.onnx)}${r.error ? " · " + esc(r.error) : ""}">${cells}</tr>`;
+    })
+    .join("");
+
+  document.querySelectorAll("#table-head th").forEach((th) => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.key;
+      if (sortKey === key) sortAsc = !sortAsc;
+      else {
+        sortKey = key;
+        sortAsc = key === "points" || key === "headroom";
+      }
+      renderTable();
+    });
+  });
+  document.querySelectorAll("#table-body tr").forEach((tr) => {
+    tr.addEventListener("click", () => selectTask(Number(tr.dataset.task), false));
+  });
+}
+
+function selectTask(task, scroll = true) {
+  document.querySelectorAll("#table-body tr").forEach((tr) => {
+    tr.classList.toggle("selected", Number(tr.dataset.task) === task);
+  });
+  const el = document.getElementById(`task-${task}`);
+  if (el && scroll) el.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+async function loadJson(url) {
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`${url}: ${res.status} ${res.statusText}`);
+  return res.json();
+}
+
+async function boot() {
+  const status = document.getElementById("status");
+  try {
+    let byOp = {};
+    let arcMapping = {};
+    try {
+      const inv = await loadJson(PATHS.inventory);
+      byOp = inv.by_op || {};
+    } catch (_) {
+      /* optional */
+    }
+    try {
+      arcMapping = await loadJson(PATHS.arc);
+    } catch (_) {
+      /* optional */
+    }
+
+    let rows = [];
+    let sourceNote = "";
+    try {
+      const ev = await loadJson(PATHS.eval);
+      const detail = evalToDetail(ev);
+      rows = buildRowsFromEval(detail, byOp, arcMapping);
+      const totalPts =
+        ev.total_points != null
+          ? ev.total_points
+          : ev.summary?.total_points != null
+            ? ev.summary.total_points
+            : rows.reduce((s, r) => s + r.points, 0);
+      const okCount = ev.scored != null ? ev.scored : rows.filter((r) => r.ok).length;
+      const failCount =
+        ev.failed != null
+          ? (Array.isArray(ev.failed) ? ev.failed.length : Number(ev.failed))
+          : rows.filter((r) => !r.ok).length;
+      const folder = ev.dir || ev.folder || "networks";
+      const range = rows.length
+        ? `${String(rows[0].task).padStart(3, "0")}-${String(rows[rows.length - 1].task).padStart(3, "0")}`
+        : "?";
+      sourceNote =
+        `Loaded <code>${esc(PATHS.eval)}</code> · tasks <code>${esc(range)}</code> (${rows.length})` +
+        ` · folder <code>${esc(folder)}</code>` +
+        (ev.harness ? ` · <code>${esc(ev.harness)}</code>` : "") +
+        ` · eval total ${fmt(totalPts)} (${okCount} ok / ${failCount} fail)`;
+    } catch (evalErr) {
+      const manifest = await loadJson(PATHS.manifest);
+      rows = buildRowsFromManifest(manifest.tasks || {}, byOp, arcMapping);
+      sourceNote =
+        `Eval missing (<code>${esc(evalErr.message)}</code>); fell back to <code>${esc(PATHS.manifest)}</code>. Paths still refer to <code>networks/taskNNN.onnx</code>.`;
+    }
+
+    if (!rows.length) throw new Error("No tasks found in eval or manifest.");
+
+    ALL_ROWS = rows;
+    document.getElementById("source-line").innerHTML = sourceNote;
+    document.getElementById("source-chip").textContent = "networks/";
+    renderKpis(rows);
+    renderTiles(rows);
+    renderBands(rows);
+    renderMethods(rows, byOp);
+    fillFilters(rows);
+    renderTable();
+
+    document.getElementById("tile-order").addEventListener("change", () => renderTiles(ALL_ROWS));
+    ["band-filter", "method-filter"].forEach((id) => {
+      document.getElementById(id).addEventListener("change", renderTable);
+    });
+    document.getElementById("search").addEventListener("input", renderTable);
+
+    status.hidden = true;
+    document.getElementById("app").hidden = false;
+  } catch (err) {
+    status.className = "error";
+    status.innerHTML =
+      `<b>Failed to load dashboard data.</b><br>${esc(err.message)}<br><br>` +
+      `Serve the repo root over HTTP so the page can fetch JSON:<br>` +
+      `<code>cd /path/to/neurogolf-2026 && python -m http.server 8765</code><br>` +
+      `then open <code>http://localhost:8765/tools/dashboard.html</code>`;
+  }
+}
+
+boot();
+</script>
+</body>
+</html>
